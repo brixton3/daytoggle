@@ -6,6 +6,23 @@
     <title>dia-noche modo</title>
 </head>
 <body>
-    
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .night {
+            background-color: #333;
+            color: #f0f0f0;
+        }
+    </style>
 </body>
+<h1>dia noche modo</h1>
+<button onclick="toggleTheme()">Cambiar</button>
+<script>
+    function toggleTheme(){
+        const body = document.body;
+        body.classList.toggle('night');
+    }
+</script>
 </html>
